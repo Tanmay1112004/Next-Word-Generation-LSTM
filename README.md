@@ -1,96 +1,165 @@
-# 🎬 Next Word Generation using LSTM  
+# 🎬 Next Word Generation using LSTM
 
-This project is a **Next Word Prediction Model** trained on the **TMDB 5000 Movies dataset**.  
-It uses **LSTM (Long Short-Term Memory)** neural networks to generate the next words in a sequence.  
-The project also features an **interactive Gradio-based frontend** where you can test the model in real time.  
+![Image](https://camo.githubusercontent.com/9a5b885799c2d8e50f3f049fde2ada7696e974ca/68747470733a2f2f692e696d6775722e636f6d2f484646575674432e706e673f32)
+
+![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/1%2AkXg3zEXnzRDzSBrYLKlnxA.png)
+
+![Image](https://www.tensorflow.org/static/text/tutorials/images/text_generation_sampling.png)
+
+![Image](https://www.tensorflow.org/static/text/tutorials/images/text_generation_training.png)
+
+Language models power everything from **autocomplete to AI assistants**.
+This project builds a **Next Word Prediction system** using **Long Short-Term Memory** trained on the **TMDB 5000 Movies Dataset**.
+
+The model learns patterns from movie titles and predicts the **most likely next word in a sequence**.
+An interactive **Gradio** interface allows users to test predictions in real time.
 
 ---
 
-## 🚀 Features
-- Preprocessing & tokenization of TMDB movie titles  
-- LSTM-based text generation model  
-- Training with accuracy/loss plots  
-- Save & load trained model (`.h5` file)  
-- **Gradio frontend** with sliders for number of words and top-k predictions  
-- Clean **dark UI** for demo purposes  
+# 🚀 Key Features
+
+* Text preprocessing and tokenization
+* LSTM-based sequence prediction model
+* Training visualization using loss & accuracy curves
+* Saved trained model (`.h5`)
+* Interactive Gradio UI
+* Adjustable **Top-K predictions**
+* Clean dark-themed demo interface
+
+This project demonstrates the **end-to-end workflow of a deep learning NLP system**.
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
+
+```bash
+Next-Word-Generation-LSTM/
+ ├── Next_Word_Prediction.ipynb
+ ├── nwp.h5
+ ├── tmdb_5000_movies.csv
+ └── README.md
 ```
 
-├── Next\_Word\_Prediction.ipynb   # Google Colab notebook (training + demo)
-├── nwp.h5                       # Saved LSTM model
-├── tmdb\_5000\_movies.csv         # Dataset (add via Kaggle/CSV)
-└── README.md                    # Project documentation
+Each component serves a specific role:
 
-````
+* Notebook → training & experimentation
+* `.h5` → serialized trained model
+* dataset → training corpus
+* README → project documentation
 
----
-
-## 🛠️ Tech Stack
-- Python 🐍  
-- TensorFlow / Keras  
-- Pandas, NumPy  
-- Gradio (for frontend UI)  
-- Matplotlib (for plots)  
+Minimal structure. Clear workflow.
 
 ---
 
-## ⚡ Quick Start
+# 🧠 Model Architecture
 
-1. Clone this repository:
-   bash
-   git clone https://github.com/Tanmay1112004/Next-Word-Generation-LSTM.git
-   cd Next-Word-Generation-LSTM
+The model uses **LSTM layers** designed for sequential text data.
 
+Pipeline:
 
-2. Open **Google Colab** and upload the notebook + dataset + model file.
+1. Text cleaning
+2. Tokenization
+3. Sequence generation
+4. Padding sequences
+5. LSTM model training
+6. Prediction generation
 
-3. Install dependencies inside Colab:
+Why LSTM?
 
-   ```bash
-   !pip install tensorflow gradio matplotlib pandas numpy
-   ```
-
-4. Run all cells.
-
-5. Launch the Gradio app:
-
-   ```python
-   demo.launch(share=True)
-   ```
+Because it captures **long-term dependencies in sequences**, making it ideal for **language modeling tasks**.
 
 ---
 
-## 🎯 Example Output
+# 🛠 Technology Stack
 
-**Seed text:**
+* Python
+* TensorFlow / Keras
+* Pandas
+* NumPy
+* Matplotlib
+* Gradio
+
+This stack enables **deep learning training + interactive ML deployment**.
+
+---
+
+# ⚡ Quick Start
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Tanmay1112004/Next-Word-Generation-LSTM.git
+cd Next-Word-Generation-LSTM
+```
+
+### Install dependencies
+
+```bash
+pip install tensorflow gradio matplotlib pandas numpy
+```
+
+### Run the notebook
+
+```bash
+jupyter notebook Next_Word_Prediction.ipynb
+```
+
+Launch the interactive app:
+
+```python
+demo.launch(share=True)
+```
+
+---
+
+# 🎯 Example Prediction
+
+**Seed Input**
 
 ```
 The Lord
 ```
 
-**Generated (next 5 words):**
+**Generated Output**
 
 ```
 The Lord of the Rings
 ```
 
----
-
-## 📊 Training Curves
-
-Loss and accuracy plots are included in the notebook for tracking training progress.
+The model predicts the next word by selecting from the **top probability candidates**.
 
 ---
 
-## 🤝 Acknowledgements
+# 📊 Training Visualization
 
-* Dataset: [TMDB 5000 Movies Dataset (Kaggle)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+The notebook includes:
+
+* Training accuracy curve
+* Loss curve
+* Model convergence analysis
+
+These visualizations help evaluate model learning behavior.
 
 ---
 
-⭐ If you like this project, don’t forget to **star the repo** and connect with me on [LinkedIn](https://www.linkedin.com/tanmay-kshirsagar)!
+# 🤝 Acknowledgements
 
-```
+Dataset source:
+**TMDB 5000 Movies Dataset**
+
+---
+
+# ⭐ Support the Project
+
+If you found this useful:
+
+⭐ Star the repository
+🍴 Fork it
+🚀 Build something on top of it
+
+---
+
+💡 **Portfolio Tip:**
+This project is strong because it shows **Deep Learning + NLP + ML deployment** in one system.
+
+If you'd like, I can also help you create a **🔥 single viral LinkedIn post showcasing ALL your ML projects together** — that kind of post can easily get **10× more visibility from recruiters.**
