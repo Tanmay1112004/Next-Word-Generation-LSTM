@@ -158,8 +158,3 @@ If you found this useful:
 🚀 Build something on top of it
 
 ---
-
-💡 **Portfolio Tip:**
-This project is strong because it shows **Deep Learning + NLP + ML deployment** in one system.
-
-If you'd like, I can also help you create a **🔥 single viral LinkedIn post showcasing ALL your ML projects together** — that kind of post can easily get **10× more visibility from recruiters.**
