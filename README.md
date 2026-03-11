@@ -13,6 +13,7 @@ An interactive **Gradio** interface allows users to test predictions in real tim
 ![demo](https://github.com/Tanmay1112004/Next-Word-Generation-LSTM/blob/main/Next-Word-Generation-LSTM/screenshots/Screenshot%202025-09-17%20205339.png)
 
 ![demo](https://github.com/Tanmay1112004/Next-Word-Generation-LSTM/blob/main/Next-Word-Generation-LSTM/screenshots/Screenshot%202025-09-17%20205339.png)
+
 ---
 
 # 🚀 Key Features
