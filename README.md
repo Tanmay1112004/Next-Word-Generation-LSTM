@@ -1,13 +1,5 @@
 # 🎬 Next Word Generation using LSTM
 
-![Image](https://camo.githubusercontent.com/9a5b885799c2d8e50f3f049fde2ada7696e974ca/68747470733a2f2f692e696d6775722e636f6d2f484646575674432e706e673f32)
-
-![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/1%2AkXg3zEXnzRDzSBrYLKlnxA.png)
-
-![Image](https://www.tensorflow.org/static/text/tutorials/images/text_generation_sampling.png)
-
-![Image](https://www.tensorflow.org/static/text/tutorials/images/text_generation_training.png)
-
 Language models power everything from **autocomplete to AI assistants**.
 This project builds a **Next Word Prediction system** using **Long Short-Term Memory** trained on the **TMDB 5000 Movies Dataset**.
 
