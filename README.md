@@ -88,7 +88,7 @@ This stack enables **deep learning training + interactive ML deployment**.
 ### Clone the repository
 
 ```bash
-git clone https://github.com//Next-Word-Generation-LSTM.git
+git clone https://github.com/Tanmay1112004/Next-Word-Generation-LSTM.git
 cd Next-Word-Generation-LSTM
 ```
 
